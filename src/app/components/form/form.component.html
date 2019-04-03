@@ -24,7 +24,11 @@
         </div>
       </mat-form-field>
       <div>
-        <mat-checkbox name = 'activo' [(ngModel)]='modelo.activo' [checked]="modelo.activo">Activo?</mat-checkbox>
+        <mat-checkbox
+          name = 'activo'
+          [(ngModel)]='modelo.activo'>
+          Activo?
+        </mat-checkbox>
       </div>
       <div>
         <mat-label>Tipo</mat-label>
@@ -35,7 +39,9 @@
       </div>
       <mat-form-field>
         <mat-label>Fecha</mat-label>
-        <input  name ="fecha" [(ngModel)]="modelo.fecha" matInput [matDatepicker]="myPicker"  placeholder="mm/dd/aaaa">
+        <input  name ="fecha" [(ngModel)]="modelo.fecha"
+                matInput [matDatepicker]="myPicker"
+                placeholder="mm/dd/aaaa">
         <mat-datepicker-toggle  matSuffix [for]="myPicker"></mat-datepicker-toggle>
         <mat-datepicker #myPicker></mat-datepicker>
       </mat-form-field>

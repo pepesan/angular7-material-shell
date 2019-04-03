@@ -5,7 +5,7 @@ import {Libro} from '../models/libro';
 import {GetLibrosResponse} from '../models/getLibrosResponse';
 import {Observable} from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
-import {Partido} from '../models/partido';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,20 +14,7 @@ export class LibrosService {
   constructor(private httpClient: HttpClient) {
     console.log('Servicio Cargado');
   }
-  getLibros(){
-    /*
-    let libro = {
-      _id:"122131421",
-      titulo:"asdasd",
-      autor:"salkfdjalfkj",
-      isbn:"124e145623576467"
-    };
-    let librosResponse = {
-      'res': 'Success',
-      'libros': [libro]
-    };
-     */
-  }
+
   getData() {
     return this.httpClient
       .get<Observable<any>>(this.url)
