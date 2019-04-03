@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
+  // Navegación
+  MatSidenavModule,
+  MatToolbarModule,
+  MatListModule,
   // Formularios
   MatButtonModule,
   MatCardModule,
@@ -28,6 +32,9 @@ import {
     CommonModule
   ],
   exports: [
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,

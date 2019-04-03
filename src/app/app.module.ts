@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 // Importación de módulos de Angular
 import {AngularImportsModule} from './angular-imports/angular-imports.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 // Importación de componentes de la Aplicación
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -46,7 +47,8 @@ const appRoutes: Routes = [
     ),
     FormsModule,
     HttpClientModule,
-    AngularImportsModule
+    AngularImportsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
