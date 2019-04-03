@@ -16,12 +16,12 @@ registerLocaleData(localeEs, 'es', localeEsExtra);
 import { LOCALE_ID} from '@angular/core';
 // Importación de componentes de la Aplicación
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import {DataTableComponent} from './components/data-table/data-table.component';
-import { DetailComponent } from './components/detail/detail.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { FormComponent } from './components/form/form.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import {DataTableComponent} from './components/crud/data-table/data-table.component';
+import { DetailComponent } from './components/crud/detail/detail.component';
+import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
+import { FormComponent } from './components/crud/form/form.component';
 // Configuración de rutas
 const appRoutes: Routes = [
   { path: '' , redirectTo: '/home', pathMatch: 'full' },

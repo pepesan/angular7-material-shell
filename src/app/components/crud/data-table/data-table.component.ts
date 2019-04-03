@@ -18,7 +18,7 @@ export class DataTableComponent {
     // Crea 100 usuarios
     const users: UserData[] = [];
     for (let i = 1; i <= 100; i++) { users.push(createNewUser(i)); }
-
+    // TODO: Leer los datos de la BBDD
     // Asigna los datos al Datasource
     this.dataSource = new MatTableDataSource(users);
   }
