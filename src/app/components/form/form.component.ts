@@ -17,6 +17,9 @@ export class FormComponent implements OnInit {
   ngOnInit() {
   }
   save() {
+    // TODO: LLamar al API REST para guardar el dato
+    console.log(this.modelo);
+    // Volver al listado o al Detalle
     this.router.navigate(['/listado']);
   }
 
