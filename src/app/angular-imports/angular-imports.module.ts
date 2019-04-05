@@ -24,6 +24,8 @@ import {
   MatTableModule,
   // Iconos
   MatIconModule,
+  // Tabs
+  MatTabsModule
 } from '@angular/material';
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import {
     MatSortModule,
     MatTableModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ]
 })
 export class AngularImportsModule { }

@@ -22,11 +22,17 @@ import {DataTableComponent} from './components/crud/data-table/data-table.compon
 import { DetailComponent } from './components/crud/detail/detail.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { FormComponent } from './components/crud/form/form.component';
+import { FormDemoComponent } from './components/demos/form-demo/form-demo.component';
+import { FormDemo2Component } from './components/demos/form-demo2/form-demo2.component';
+import { FormLoginComponent } from './components/demos/form-login/form-login.component';
 // Configuración de rutas
 const appRoutes: Routes = [
   { path: '' , redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'demos/form', component: FormDemoComponent },
+  { path: 'demos/form2', component: FormDemo2Component },
+  { path: 'demos/login', component: FormLoginComponent },
   { path: 'listado', component: DataTableComponent },
   { path: 'form', component: FormComponent },
   { path: 'listado/:id', component: DetailComponent },
@@ -42,7 +48,10 @@ const appRoutes: Routes = [
     DataTableComponent,
     DetailComponent,
     PageNotFoundComponent,
-    FormComponent
+    FormComponent,
+    FormDemoComponent,
+    FormDemo2Component,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,
