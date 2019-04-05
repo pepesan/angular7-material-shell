@@ -25,6 +25,9 @@ import { FormComponent } from './components/crud/form/form.component';
 import { FormDemoComponent } from './components/demos/form-demo/form-demo.component';
 import { FormDemo2Component } from './components/demos/form-demo2/form-demo2.component';
 import { FormLoginComponent } from './components/demos/form-login/form-login.component';
+import { FlexLayoutBasicComponent } from './components/demos/flex-layout-basic/flex-layout-basic.component';
+import { DragDropComponent } from './components/demos/drag-drop/drag-drop.component';
+import { VirtualScrollComponent } from './components/demos/virtual-scroll/virtual-scroll.component';
 // Configuración de rutas
 const appRoutes: Routes = [
   { path: '' , redirectTo: '/home', pathMatch: 'full' },
@@ -33,6 +36,9 @@ const appRoutes: Routes = [
   { path: 'demos/form', component: FormDemoComponent },
   { path: 'demos/form2', component: FormDemo2Component },
   { path: 'demos/login', component: FormLoginComponent },
+  { path: 'demos/flex-basic', component: FlexLayoutBasicComponent },
+  { path: 'demos/drag-drop', component: DragDropComponent },
+  { path: 'demos/virtual-scroll', component: VirtualScrollComponent },
   { path: 'listado', component: DataTableComponent },
   { path: 'form', component: FormComponent },
   { path: 'listado/:id', component: DetailComponent },
@@ -51,7 +57,10 @@ const appRoutes: Routes = [
     FormComponent,
     FormDemoComponent,
     FormDemo2Component,
-    FormLoginComponent
+    FormLoginComponent,
+    FlexLayoutBasicComponent,
+    DragDropComponent,
+    VirtualScrollComponent
   ],
   imports: [
     BrowserModule,

@@ -27,11 +27,14 @@ import {
   // Tabs
   MatTabsModule
 } from '@angular/material';
+
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     MatSidenavModule,
@@ -53,7 +56,10 @@ import {
     MatTableModule,
     MatIconModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    // CDK
+    DragDropModule,
+    ScrollingModule
   ]
 })
 export class AngularImportsModule { }
